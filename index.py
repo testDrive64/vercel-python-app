@@ -8,8 +8,7 @@ def home():
 
 @app.route('/info')
 def info():
-    return "Dies ist ein Platzhalter für die Eigentliche Story."
-
+    return render_template('info.html')
 
 @app.route('/api')
 def api():
