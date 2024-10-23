@@ -1,17 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css')}}">
-    <title>BreitlinZ Seeds</title>
-</head>
-<body>
-    <h1>BreitlingZ</h1>
-    <p>This is a story about Beans, Friendship and Quality.</p>
-    <p>Wir sind eine Gruppe von Freunden, die das Leben in vollen Zügen genießen und unsere gemeinsamen Erlebnisse und Abenteuer teilen möchten. Ob es um Reisen, Hobbys, oder einfach nur um das Zusammensein geht – hier findet ihr Geschichten, Fotos und Tipps, die unser buntes Miteinander widerspiegeln.
+{% extends 'base.html' %}
+
+{% block title %} BreitlingZ {% endblock %}
+{% block content %}
+
+<h1>BreitlingZ</h1>
+<p>This is a story about Beans, Friendship and Quality.</p>
+<p>
+    Wir sind eine Gruppe von Freunden, die das Leben in vollen Zügen genießen und unsere gemeinsamen Erlebnisse und Abenteuer teilen möchten. Ob es um Reisen, Hobbys, oder einfach nur um das Zusammensein geht – hier findet ihr Geschichten, Fotos und Tipps, die unser buntes Miteinander widerspiegeln.
     Unsere Freundschaft ist geprägt von Vertrauen, Spaß und der Freude am Entdecken neuer Dinge. Wir laden euch ein, Teil unserer Reise zu sein und euch von unserer Begeisterung anstecken zu lassen. Schaut euch um, lasst euch inspirieren und vielleicht entdeckt ihr ja auch etwas Neues für euch selbst.
-    Viel Spaß beim Stöbern und herzlich willkommen in unserem Freundeskreis!</p>
-</body>
-</html>
+    Viel Spaß beim Stöbern und herzlich willkommen in unserem Freundeskreis!
+</p>
+
+{% endblock %}
     
